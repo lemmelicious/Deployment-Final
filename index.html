@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Form Validations</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+</head>
+<body>
+
+    <div class="container">
+        
+        <form method="get" action="dashboard.html" id="form" onsubmit="return validation()">
+            <h1>Simple Form Validations</h1>
+
+            <label for="username">Username: </label>
+            <input type="text" id="username" name="username" placeholder="username@example" required><br><br>
+
+            <label for="password">Password: </label>
+            <input type="password" id="password" name="password" placeholder="Password" required><br><br>
+
+            <input type="submit" value="submit">
+        </form>
+        
+    </div>
+
+    <script  src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+<!-- kulang ug < -->
+
+ 
+ 
+    <!-- $dbhost = 'localhost';
+    $dbuser = 'root';
+    $dbpass = '@crossfire2001q';
+    $dbname = 'website_db';
+
+    $conn = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+
+    if (!$conn) {
+        die("Connection failed: " . mysqli_connect_error());
+    }
+
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+
+
+        $sql = "INSERT INTO login_informations (username, password) VALUES ('$username', '$password')";
+
+        if (mysqli_query($conn, $sql)) {
+            $successMessage = "Record inserted successfully!";
+        } else {
+            $errorMessage = "Error: " . $sql . "<br>" . mysqli_error($conn);
+            echo $errorMessage;
+        }
+    }
+
+    mysqli_close($conn); -->
+

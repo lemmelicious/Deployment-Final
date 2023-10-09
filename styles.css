@@ -1,0 +1,42 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url("./images/wallpaper\ 2023.png"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h1 em {
+    color: green;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(32, 32, 192);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: block;
+}
+
+button:hover{
+    background-color: green;
+}

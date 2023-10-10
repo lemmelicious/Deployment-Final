@@ -1,12 +1,13 @@
-*{
+* {
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body{
+body {
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url("./images/wallpaper\ 2023.png"); 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("./images/wallpaper\ 2023.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -16,7 +17,7 @@ body{
     margin: 0;
 }
 
-.container{
+.container {
     background-color: white;
     opacity: 0.75;
     position: relative;
@@ -27,12 +28,15 @@ body{
     padding: 25px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 80%; /* Set a maximum width for the container */
+    max-width: 400px; /* Adjust the maximum width as per your design */
 }
 
-.container input[type="text"], .container input[type="password"]{
-    width: 290px;
+.container input[type="text"],
+.container input[type="password"] {
+    width: 100%;
     padding: 10px;
-    margin: 5px;
+    margin: 5px 0;
     border: 1px solid #e2dfdf;
     border-radius: 5px;
     text-align: center;
@@ -43,7 +47,8 @@ body{
     text-align: center;
 }
 
-.container input[type="submit"]{
+.container input[type="submit"] {
+    width: 100%;
     padding: 10px 20px;
     border: none;
     background-color: rgb(32, 32, 192);
@@ -52,6 +57,14 @@ body{
     border-radius: 5px;
 }
 
-.container input[type="submit"]:hover{
+.container input[type="submit"]:hover {
     background-color: green;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%; /* Adjust width for smaller screens */
+        max-width: none; /* Remove maximum width */
+    }
 }

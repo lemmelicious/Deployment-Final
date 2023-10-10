@@ -21,13 +21,13 @@ function validation() {
         return true;
     } catch (error) {
         if (error.message.includes("Invalid Email")) {
-            alert("Error: " + error.message);
-            alert("Don't forget to add '@' and use accepted domains like gmail, yahoo, etc., and valid extensions like .com, .org, etc.");
+            console.log("Error: " + error.message);
+            console.log("Don't forget to add '@' and use accepted domains like gmail, yahoo, etc., and valid extensions like .com, .org, etc.");
         } else if (error.message.includes("Invalid Password")) {
-            alert("Error: " + error.message);
-            alert("Password should only contain uppercase and lowercase letters and numbers, without special characters.");
+            console.log("Error: " + error.message);
+            console.log("Password should only contain uppercase and lowercase letters and numbers, without special characters.");
         } else {
-            alert("Error: " + error.message);
+            console.log("Error: " + error.message);
         }
         console.log(error.message);
         return false;
